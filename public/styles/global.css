@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    /* 
+        Varáveis em css por padrão é "-- variavel";
+        Utilizar o "rem" ao invés de "px" pois o rem tem caracteristicas responsivas para se adpatar ao tamanho da janela do navegador; 
+        1rem = 16px (User Agent) = 100% (User Agent)
+    */
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+    --grey-medium: #EAECF1;
+
+    /* 10px ----- dica: para facilitar a responsividade na medida "rem" é recomendado setar a "font-size" de todo o html em 10px ou 62.5% pois facilita a conversão de px para rem (28px = 2.8rem) */
+    font-size: 62.5% 
+}
+
+body{
+    display: flex;
+    height: 100vh; /* vh = view height */
+    /*width: 100vw; vw = view width */
+    background: var(--background);    
+}
+
+body, button, input, textarea{
+    /* clamp = intervalo de tamanho: clamp(t.mínimo, t.padrão, t.máximo) */
+    font-size: clamp(14px, 1.6rem, 2vw);
+
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ----------- input and buttons ------------ */
+input, button, .button{
+    /* OBS Para uma aparencia mais agradável de botões e caixas de input usar sempre o "border-radius"!  */
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+button, .button{
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0;
+
+    /* OBS sempre ao usar "display: flex" é recomendado acompanhar o "align-items: center" */
+    display: flex;
+    align-items: center;
+
+    /* Não utilizar o "text-align: center" quando o elemento possuir imagens */
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    transition: .2s;
+
+    
+    /* "Mãozinha" do mouse ao passar por um button */
+    cursor: pointer; 
+}
+
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+button > img,
+.button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+/* Header */
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+}

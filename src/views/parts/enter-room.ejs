@@ -1,0 +1,29 @@
+<section>
+    <h2>Entre como participante</h2>
+    <form action="/enter-room" method="POST">
+        <!--
+        O for="room-id" é usado para linkar o Label com o input, permitindo ao clicar no texto do input redirecione o usuário á entrar com o dado requisitado;
+        A class="sr-only" é utilizado para manter o label escondido do usuário, porém visivel para os motores de busca e ferramentas de acessibilidade;
+        -->
+        <label class="sr-only" for="room-id">Código da sala</label> 
+        <input name ="roomId" type="number" id="room-id" placeholder="Código da sala">
+        <button>
+            <img src="images/enter-room.svg" alt="Entrar na Sala">
+            Entrar na sala
+        </button>
+    </form>
+</section>
+
+<div class="separator">
+    <div></div>
+    <div>ou</div>
+    <div></div>
+</div>
+
+<section>
+    <h2>Crie sua própria sala de forma fácil</h2>
+    <a href="create-pass" class="button outlined">
+        <img src="images/users.svg" alt="Criar Sala">
+        Criar Sala
+    </a>
+</section>

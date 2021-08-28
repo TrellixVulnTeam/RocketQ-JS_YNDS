@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+    <head>
+        <title>Criar Sala - Rocket.Q</title>
+        <meta charset="UTF-08">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        View port
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        CSS
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/home.css">
+        
+        FONTS
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="home" class="content">
+            <header>
+                <img src="images/logo.svg" alt="Rocket.Q Logo"/> 
+            </header>
+
+            <div id="bg">
+                <div class="ball top"></div>
+                <div class="ball bottom"></div>
+            </div>
+
+            <main>
+                <div class="container"> -->
+                    <section>
+                        <h2>Crie sua prórpia sala</h2>
+                        <!-- o form abaixo levará a page Room -->
+                        <form action="/create-room" method="POST"> 
+                            <!--
+                            O for="room-id" é usado para linkar o Label com o input, permitindo ao clicar no texto do input redirecione o usuário á entrar com o dado requisitado;
+                            A class="sr-only" é utilizado para manter o label escondido do usuário, porém visivel para os motores de busca e ferramentas de acessibilidade;
+                            -->
+                            <label class="sr-only" for="room-pass">Insira uma senha</label> 
+                            <input type="password" name="password" id="room-pass" placeholder="Insira uma senha">
+                            <button>
+                                <img src="images/users-white.svg" alt="Entrar na Sala">
+                                Criar sala
+                            </button>
+                        </form>
+                    </section>
+                <!-- </div>
+            </main>
+        </div>
+    </body>
+</html> -->
