@@ -9,22 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SirMechT/nlw-together.git"
+    "url": "git+https://github.com/Antonio-Ramon/RocketQ-JS.git"
   },
   "keywords": [],
   "author": "Antonio Ramon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SirMechT/nlw-together/issues"
+    "url": "https://github.com/Antonio-Ramon/RocketQ-JS/issues"
   },
-  "homepage": "https://github.com/SirMechT/nlw-together#readme",
+  "homepage": "https://github.com/Antonio-Ramon/RocketQ-JS#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "sqlite": "^4.0.23",
-    "sqlite3": "^5.0.2"
+    "express": "^4.18.1",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.20"
   }
 }
